@@ -1,2 +1,8 @@
-var APIkey = "f9ec945e1e8c7c0576c8a347c5182476"
-var URL = "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={APIKEY}"
+$("#searchBtn").on("click", function(event) {
+    event.preventDefault();
+    var APIKey = "a63765ff57a3a40184a9d31d6874cc6a"
+    var cityName = $("#userInput").val(); 
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
+
+    console.log(queryURL);
+});
