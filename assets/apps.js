@@ -20,12 +20,25 @@ function getForecast() {
         }
         })};
 
+//Current weather function
+function getWeather() {
+    var cityName = $("#userInput").val();
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
+    console.log(cityName); 
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+    .then(function(response) {
+        console.log(response);
 
+    })
+}
 
 
 //Search button click event
 $("#searchBtn").on("click", function(event) {
     event.preventDefault();
     getForecast();
-    
+    getWeather();
 });
