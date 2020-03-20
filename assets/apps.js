@@ -14,7 +14,7 @@ function getForecast() {
         console.log(response);
         var results = response.list;
 
-        $("#five-day").text(results);
+        $("#five-day").text(JSON.stringify(results));
     });
 };
 
@@ -30,7 +30,7 @@ function getWeather() {
     .then(function(response) {
         console.log(response);
 
-        $("#current-weather").text(response.weather);
+        $("#current-weather").text(JSON.stringify(response.main));
 
     });
 };
