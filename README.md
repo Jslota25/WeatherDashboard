@@ -4,7 +4,7 @@
 @Jslota25
 
 # Tech
-HTML, CSS, Javascript
+HTML, CSS, Javascript, AJAX, Jquery
 
 # About
 This application will show you the current weather, five day forecast, and UV index of any city a user enters into the search bar.  The data is derived from the weathermap.org API.
