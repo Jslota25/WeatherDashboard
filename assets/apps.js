@@ -14,7 +14,9 @@ function getForecast() {
         console.log(response);
         var results = response.list;
 
-        $("#five-day").text(JSON.stringify(results));
+        for(var i = 0; i < 5; i++) {
+            $("#five-day").text(JSON.stringify(results[i]));
+        }
     });
 };
 
