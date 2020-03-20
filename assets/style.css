@@ -1,7 +1,8 @@
 .lead,
-.display-4 {
+.display-4,
+h2 {
     text-align: center;
-}
+} 
 
 .btn-outline {
     outline-style: auto;
